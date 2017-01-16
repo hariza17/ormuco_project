@@ -26,7 +26,7 @@ SECRET_KEY = '+n)g#+7meb7!(r$15n3-xow=qf0#k&m47@f3fcn=nrlc^+(1t)'
 DEBUG = True
 
 # you need chage the ip address 45.55.83.233
-ALLOWED_HOSTS = ['45.55.83.233', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['104.131.77.61', 'localhost', '127.0.0.1']
 
 
 # Application definition
