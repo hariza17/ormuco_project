@@ -25,12 +25,14 @@ SECRET_KEY = '+n)g#+7meb7!(r$15n3-xow=qf0#k&m47@f3fcn=nrlc^+(1t)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# you need chage the ip address 45.55.83.233
+ALLOWED_HOSTS = ['45.55.83.233', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'ormuco.apps.OrmucoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -117,4 +119,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+STATIC_ROOT = '/static/'
 STATIC_URL = '/static/'

@@ -1,0 +1,34 @@
+<style type="text/css">
+  
+
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+</style>
+
+<h1>Persons list</h1>
+<a href="new">New Person</a>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Favorite color</th> 
+    <th>Animal</th>
+  </tr>
+  {% for man in object_list %}
+  <tr>
+    <td>{{ man.name }}</td>
+    <td>{{ man.favorite_color }}</td> 
+    <td>{{ man.animal }}</td>
+  </tr>
+ {% endfor %}
+</table>
+
+
+
+
